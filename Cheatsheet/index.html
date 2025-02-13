@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/9b5a866004.js" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+    <title>Cheat sheet - All Kind of stuff here</title>
+</head>
+<body>
+    <header>
+        <span class="name">Cheatsheet</span>
+        <nav>
+            <ul class="list">
+                <li><a href="#CLI">CLI</a></li>
+                <li><a href="#HTML">HTML</a></li>
+                <li><a href="#CSS">CSS</a></li>
+                <li><a href="#JS">JavaScript</a></li>
+                <li><a href="#react">React</a></li>
+                <li><a href="#sql">SQL</a></li>
+                <li><a href="#csharp">C#</a></li>
+                <li><a href="#UE">Unreal Engine</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="article">
+            <div class="header" id="CLI">
+                <span class="name">Command line interface</span>
+                <span class="change"><i class="fa-solid fa-plus icon1" onclick="menu(1)"></i></span>
+            </div>
+            <div class="clanek1 hide">
+                <p class="info"><span class="bold">What is it?</span> A command-line interface (CLI) is a means of interacting with a computer program by inputting lines of text called command-lines. Knowledge of CLIs is also useful for writing scripts. Programs that have CLIs are generally easy to automate via scripting, since command-lines, being mere lines of text, are easy to specify in code.</p>    
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat cumque laudantium vel ullam odit similique ab accusantium repellat necessitatibus!</p>
+            </div>
+        </div>  
+    </section>
+    <section>
+        <div class="article">
+            <div class="header" id="HTML">
+                <span class="name">HyperText Markup Language</span>
+                <span class="change"><i class="fa-solid fa-plus icon2" onclick="menu(2)"></i></span>
+            </div>
+            <div class="clanek2 hide">
+                <p class="info"><span class="bold">What is it?</span> HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.</p>    
+                <hr>
+                <p>
+                    <h2>Basics</h2>
+                </p>
+            </div>
+        </div>  
+    </section>
+    <section>
+        <div class="article">
+            <div class="header" id="CSS">
+                <span class="name">Cascading Style Sheet</span>
+                <span class="change"><i class="fa-solid fa-plus icon3" onclick="menu(3)"></i></span>
+            </div>
+            <div class="clanek3 hide">
+                <p class="info"><span class="bold">What is it?</span> Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).</p>    
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat cumque laudantium vel ullam odit similique ab accusantium repellat necessitatibus!</p>
+            </div>
+        </div>  
+    </section>
+    <section>
+        <div class="article">
+            <div class="header" id="JS">
+                <span class="name">JavaScript</span>
+                <span class="change"><i class="fa-solid fa-plus icon4" onclick="menu(4)"></i></span>
+            </div>
+            <div class="clanek4 hide">
+                <p class="info"><span class="bold">What is it?</span> JavaScript often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.</p>    
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat cumque laudantium vel ullam odit similique ab accusantium repellat necessitatibus!</p>
+            </div>
+        </div>  
+    </section>
+    <section>
+        <div class="article">
+            <div class="header" id="react">
+                <span class="name">React JS</span>
+                <span class="change"><i class="fa-solid fa-plus icon5" onclick="menu(5)"></i></span>
+            </div>
+            <div class="clanek5 hide">
+                <p class="info"><span class="bold">What is it?</span> C# (pronounced "C-Sharp") is a modern, object-oriented programming language developed by Microsoft.</p>    
+                <hr>
+                <p>We have to be sure we have Node and NPM installed. Go to <a href="https://nodejs.org/en">Node.JS</a> download and Install!</p>
+                <h2>Creating React JS project</h2>
+                <p>
+                    npm create vite@latest < name of project > -- --template react - Creating React project with Vite as the build tool.<br>
+                    npm create react-app my-app - Creating React project using only React.
+                </p>
+            </div>
+        </div>  
+    </section>
+    <section>
+        <div class="article">
+            <div class="header" id="sql">
+                <span class="name">SQL</span>
+                <span class="change"><i class="fa-solid fa-plus icon6" onclick="menu(6)"></i></span>
+            </div>
+            <div class="clanek6 hide">
+                <p class="info"><span class="bold">What is it?</span> React JS is an open-source JavaScript library for building user interfaces. Developed by Facebook (now Meta), it has become one of the most popular tools for creating interactive web applications</p>    
+                <hr>
+                <h2>Basics</h2>
+                <p>
+                    SELECT * FROM Production.Product; - Select everything from Table Production.Product<br>
+                    SELECT OrderDate AS [Dates] FROM Production.Product; - Select Column OrderDate from Table Production.Product and give it alias Dates <br>
+                    SELECT ProductID, Name + '(' + ProductNumber + ')', ListPrice - StandardCost FROM Production.Product; - Select ProductID, Name and ProductNumber in one column (CONCATINATE), and substract StandardCost from ListPrice <br>
+                    CAST(ProductID AS varchar(4)) - We are converting/casting one Datatype into another , now we are casting INT into varchar(string) ... But we have to be sure we are able to (varchar into int does not need to work)<br>
+                    TRY_CAST(Size AS integer) - We are trying to cast. If it is possible to cast Size as int, we will get numerical outpit, if it is not able to do it, we will get NULL <br>
+                    CONVERT(varchar(4), ProductID) - Same as CAST but different syntax, mostly used for Date, we can choose different date formats with CONVERT <br>
+                    PARSE('01/01/2021' AS date) - converts the string '01/01/2021' into a date data type <br>
+                    STR(ListPrice) - Converts numerical value into string <br>
+                    ISNULL(MiddleName, 'None') - If our output would be null and we dont want that we can use this function to change all outputs into something we want<br>
+                    SELECT COALESCE ( expression1, expression2, [ ,...n ] ) . evaluates the given expressions in order and returns the first non-NULL value it encounters. <br>
+                </p>
+                <br>
+                <h2>Creating Users</h2>
+                <p>
+                    SELECT USER_NAME(); - Who am I ? <br>
+                    CREATE USER < user name > WITHOUT LOGIN; - Creating user without login (only user in database)<br>
+                    CREATE LOGIN < login name > WITH PASSWORD = 'password' - Creating user which will be able to Log in Management studio.<br>
+                    CREATE USER < user name > FOR LOGIN < login name > - Now user can login into Database and fully use it if he has privilegis<br>
+                    EXECUTE AS USER = 'user name' - Switching users in Database <br>
+                    REVERT - Switching to the last user <br>
+                    GRANT < what commands > ON < schema or others > TO user - Granting privilegis to user so they can do stuff <br>
+                    REVOKE - Revoking privilegis
+                </p>
+                <br>
+                <h2>Transactions and Savepoints</h2>
+                <p>
+                    BEGIN TRAN - Starting a Transaction<br>
+                    COMMIT - Commiting a Transaction<br>
+                    ROLLBACK - Canceling whole Transaction<br>
+                    SAVE TRAN < name > - SAVEPOINT for ROLLBACK <br>
+                    ROLLBACK TRANSACTION < name > - Canceling to the SAVEPOINT <br>
+                    SELECT @@TRANCOUNT - How much Transaction is open<br>
+                    SELECT XACT_STATE(); - Check if transation is open (doesnt matter how much). State: 1 - Yes , 0 - No, -1 - Transaction is broken
+                </p>
+                <br>
+                <h2>XML and JSON</h2>
+                <br>
+                <h2>FileGroups</h2>
+                <br>
+                <h2>Partitions</h2>
+                <br>
+                <h2>System Tables</h2>
+                <p>
+                    SELECT * FROM sys.schemas; - Schemes in Database <br> 
+                    SELECT * FROM sys.sysusers; - Users in Database
+                </p>
+            </div>
+        </div>  
+    </section>
+    <section>
+        <div class="article">
+            <div class="header" id="csharp">
+                <span class="name">C#</span>
+                <span class="change"><i class="fa-solid fa-plus icon7" onclick="menu(7)"></i></span>
+            </div>
+            <div class="clanek7 hide">
+                <p class="info"><span class="bold">What is it?</span> C# (pronounced "C-Sharp") is a modern, object-oriented programming language developed by Microsoft.</p>    
+                <hr>
+                <p>
+                    <h2>Basics</h2>
+                    <p>
+                        Console.WriteLine("Hello World!"); - Prints Hello World in Console and puts our cursor on a new line (Next command will be printed on a new line)<br>
+                        Console.Write("Congratulations!"); - Prints Congratulations! in Console but cursor stays on the same line<br>
+                    </p>
+                    <br>
+                </p>
+            </div>
+        </div>  
+    </section>
+    <section>
+        <div class="article">
+            <div class="header" id="UE">
+                <span class="name">Unreal Engine</span>
+                <span class="change"><i class="fa-solid fa-plus icon8" onclick="menu(8)"></i></span>
+            </div>
+            <div class="clanek8 hide">
+                <p class="info"><span class="bold">What is it?</span> Unreal Engine is a complete suite of creation tools for game development, architectural and automotive visualization, linear film and television content creation, broadcast and live event production, training and simulation, and other real-time applications.</p>    
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat cumque laudantium vel ullam odit similique ab accusantium repellat necessitatibus!</p>
+            </div>
+        </div>  
+    </section>
+</body>
+</html>

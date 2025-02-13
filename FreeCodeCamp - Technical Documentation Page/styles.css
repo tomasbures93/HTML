@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif; 
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: 2px solid grey;
+}
+nav h2 {
+    font-size: 26px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+nav ul {
+    border-top: 2px solid grey;
+}
+nav ul li {
+    margin: 15px 0 15px 0;
+    list-style: none;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px 0 0 320px;
+}
+main header {
+    font-size: 28px;
+    padding: 0 0 20px 0;
+}
+main p {
+    padding: 0 10px 15px 10px;
+}
+.bold {
+    font-weight: 700;
+}
+main h3 {
+    font-size: 20px;
+    padding: 0 0 20px 10px;
+}
+main img {
+    margin: 0 0 10px 10px; 
+    border-radius: 10px;
+}
+main .main-section ul {
+    padding-bottom: 15px;
+}
+main .main-section .code {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 0 15px 10px;
+    padding: 15px 15px 15px 15px;
+    display: inline-block;
+    background-color: bisque;
+    border-radius: 5px;
+}
+.invis {
+    color: bisque;
+}
+main .main-section ol {
+    padding-bottom: 15px;
+}
+@media screen and (width < 800px) {
+    nav {
+        position: relative;
+        width: 100%;
+        border: none;
+    }
+    main {
+        padding: 20px 20px 0 20px;
+    }
+    main img {
+        width: 100%;
+    }
+}

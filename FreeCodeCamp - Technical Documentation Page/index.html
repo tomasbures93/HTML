@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h2>HTML Documentation</h2>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#What_is_HTML">What is HTML</a></li>
+            <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+            <li><a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
+            <li><a class="nav-link" href="#Applying_CSS_and_JavaScript">Applying CSS and JavaScript</a></li>
+            <li><a class="nav-link" href="#Creating_Hyperlinks">Creating Hyperlinks</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="What_is_HTML">
+            <header>What is HTML</header>
+            <p><span class="bold">HTML</span> (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+            <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+            <p>An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<" and ">". The name of an element inside a tag is case-insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the &lt;title&gt; tag can be written as &lt;Title&gt;, &lt;TITLE&gt;, or in any other way. However, the convention and recommended practice is to write tags in lowercase.</p>
+        </section>
+        <section class="main-section" id="Getting_Started">
+            <header>Getting Started</header>
+            <p>In this article, we cover the absolute basics of HTML. To get you started, this article defines elements, attributes, and all the other important terms you may have heard. It also explains where these fit into HTML. You will learn how HTML elements are structured, how a typical HTML page is structured, and other important basic language features. Along the way, there will be an opportunity to play with HTML too!</p>
+            <h3>Anatomy of an HTML element</h3>
+            <img src="img/grumpy-cat-small.png" alt="structure of HTML element">
+            <p>The anatomy of our element is:</p>
+            <ul>
+                <li><span class="bold">The opening tag:</span> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+                <li><span class="bold">The content:</span> This is the content of the element. In this example, it is the paragraph text.</li>
+                <li><span class="bold">The closing tag:</span> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+            </ul>
+            <p>The element is the opening tag, followed by content, followed by the closing tag.</p>
+            <h3>Void elements</h3>
+            <p>Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert/embed something in the document. Such elements are called void elements. For example, the &lt;img&gt; element embeds an image file onto a page:</p>
+            <code class="code">&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="Firefox icon" /&gt;</code>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_document">
+            <header>Anatomy of an HTML document</header>
+            <code class="code">
+                &lt;!doctype html> <br>
+                &lt;html lang="en-US"><br>
+                <span class="invis">...</span>&lt;head><br>
+                <span class="invis">......</span>&lt;meta charset="utf-8" /><br>
+                <span class="invis">......</span>&lt;title>My test page&lt;/title><br>
+                <span class="invis">...</span>&lt;/head><br>
+                <span class="invis">...</span>&lt;body><br>
+                <span class="invis">......</span>&lt;p>This is my page&lt;/p><br>
+                <span class="invis">...</span>&lt;/body><br>
+                &lt;/html><br>
+            </code>
+            <ol>
+                <li><span class="bold">&lt;!DOCTYPE html></span> - The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.</li>
+                <li><span class="bold">&lt;html>&lt;/html></span> - The &lt;html> element. This element wraps all the content on the page. It is sometimes known as the root element.</li>
+                <li><span class="bold">&lt;head>&lt;/head></span> - The &lt;head> element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You will learn more about this in the next article of the series.</li>
+                <li><span class="bold">&lt;meta charset="utf-8"></span> - The &lt;meta> element. This element represents metadata that cannot be represented by other HTML meta-related elements, like &lt;base>, &lt;link>, &lt;script>, &lt;style> or &lt;title>. The charset attribute specifies the character encoding for your document as UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.</li>
+                <li><span class="bold">&lt;title>&lt;/title></span> - The &lt;title> element. This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.</li>
+                <li><span class="bold">&lt;body>&lt;/body></span> - The &lt;body> element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.</li>
+            </ol>
+        </section>
+        <section class="main-section" id="Applying_CSS_and_JavaScript">
+            <header>Applying CSS and JavaScript</header>
+            <p>Just about all websites you'll use in the modern day will employ CSS to make them look cool, and JavaScript to power interactive functionality, such as video players, maps, games, and more. These are most commonly applied to a web page using the &lt;link> element and the &lt;script> element, respectively.</p>
+            <p>The &lt;link> element should always go inside the head of your document. This takes two attributes, <i>rel="stylesheet"</i>, which indicates that it is the document's stylesheet, and href, which contains the path to the stylesheet file:</p>
+            <code class="code">&lt;link rel="stylesheet" href="my-css-file.css" /></code>
+            <p>The &lt;script> element should also go into the head, and should include a src attribute containing the path to the JavaScript you want to load, and defer, which basically instructs the browser to load the JavaScript after the page has finished parsing the HTML. This is useful as it makes sure that the HTML is all loaded before the JavaScript runs, so that you don't get errors resulting from JavaScript trying to access an HTML element that doesn't exist on the page yet. There are actually a number of ways to handle loading JavaScript on your page, but this is the most reliable one to use for modern browsers.</p>
+            <code class="code">&lt;script src="my-js-file.js" defer>&lt;/script></code>
+        </section>
+        <section class="main-section" id="Creating_Hyperlinks">
+            <header>Creating Hyperlinks</header>
+            <p>Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (URL).</p>
+            <p>A basic link is created by wrapping the text or other content inside an &lt;a> element and using the href attribute, also known as a Hypertext Reference, or target, that contains the web address.</p>
+            <code class="code">&lt;a href="https://www.mozilla.org/en-US/">the Mozilla homepage&lt;/a></code>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All the documentation + images in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN WEB DOCS_</a></p>
+        </section>
+    </main>
+</body>
+</html>
